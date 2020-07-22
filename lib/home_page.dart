@@ -8,16 +8,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
-            colors: [
-              Colors.blue,
-              Colors.deepPurple[900],
-            ],
-          ),
-        ),
+//        decoration: BoxDecoration(
+//          gradient: LinearGradient(
+//            begin: Alignment.centerLeft,
+//            end: Alignment.centerRight,
+//            colors: [
+//              Colors.deepPurple,
+//              Colors.blue[800],
+//            ],
+//          ),
+//        ),
         child: Column(
           children: [
             NaveBar(),

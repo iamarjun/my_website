@@ -12,14 +12,19 @@ class MobileNavBar extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              'Arjun Manoj',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                fontSize: 30,
-              ),
+            SizedBox(
+              height: 50,
+              width: 50,
+              child: Image.asset('assets/resources/logo.png'),
             ),
+//            Text(
+//              'Arjun Manoj',
+//              style: TextStyle(
+//                fontWeight: FontWeight.bold,
+//                color: Colors.black,
+//                fontSize: 30,
+//              ),
+//            ),
             SizedBox(
               height: 20,
             ),
@@ -29,7 +34,7 @@ class MobileNavBar extends StatelessWidget {
                 Text(
                   'Home',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 SizedBox(
@@ -38,7 +43,7 @@ class MobileNavBar extends StatelessWidget {
                 Text(
                   'About Me',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 SizedBox(
@@ -47,11 +52,8 @@ class MobileNavBar extends StatelessWidget {
                 Text(
                   'Portfolio',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
-                ),
-                SizedBox(
-                  width: 30,
                 ),
               ],
             )

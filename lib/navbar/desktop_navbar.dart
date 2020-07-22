@@ -15,21 +15,26 @@ class DesktopNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              'Arjun Manoj',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                fontSize: 30,
-              ),
+            SizedBox(
+              height: 50,
+              width: 50,
+              child: Image.asset('assets/resources/logo.png'),
             ),
+//            Text(
+//              'Arjun Manoj',
+//              style: TextStyle(
+//                fontWeight: FontWeight.bold,
+//                color: Colors.black,
+//                fontSize: 30,
+//              ),
+//            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   'Home',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 SizedBox(
@@ -38,7 +43,7 @@ class DesktopNavBar extends StatelessWidget {
                 Text(
                   'About Me',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 SizedBox(
@@ -47,14 +52,14 @@ class DesktopNavBar extends StatelessWidget {
                 Text(
                   'Portfolio',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 SizedBox(
                   width: 30,
                 ),
                 MaterialButton(
-                  color: Colors.pink,
+                  color: Colors.black,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(
                       Radius.circular(20),
@@ -64,7 +69,7 @@ class DesktopNavBar extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(12.0),
                     child: Text(
-                      'Get Started',
+                      'Contact Me',
                       style: TextStyle(
                         color: Colors.white,
                       ),
