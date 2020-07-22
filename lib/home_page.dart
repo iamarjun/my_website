@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mywebsite/mainContent/main_content.dart';
 import 'package:mywebsite/navbar/nav_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -18,10 +19,19 @@ class HomePage extends StatelessWidget {
 //            ],
 //          ),
 //        ),
-        child: Column(
-          children: [
-            NaveBar(),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            vertical: 20,
+            horizontal: 40,
+          ),
+          child: Column(
+            children: [
+              NavBar(),
+              Flexible(
+                child: MainContent(),
+              ),
+            ],
+          ),
         ),
       ),
     );
